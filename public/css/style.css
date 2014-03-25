@@ -1,0 +1,80 @@
+*:focus {
+    outline: none;
+}
+body {
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.01rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: auto;
+    z-index: 10;
+    padding: 10px;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, .8);
+    box-shadow: 0 0 4px #000;
+    box-sizing: border-box;
+    color: #ccc;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#container {
+    width: 960px;
+    margin: 90px auto;
+}
+
+h1 {
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size: 60px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    letter-spacing: -2px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+p {
+    margin-bottom: 40px;
+}
+
+b {
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+blockquote {
+    display: block;
+    padding-left: 20px;
+    border-left: 6px solid #df0d32;
+}
+
+.title-editable, .body-editable {
+    margin-bottom: 30px;
+}
+.mediumInsert .mediumInsert-buttons {
+    top: -20px !important;
+}
+
+.mediumInsert .mediumInsert-placeholder .mediumInsert-images img {
+    margin-bottom: 40px !important;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+    vertical-align: middle;
+}
