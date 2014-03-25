@@ -1,3 +1,4 @@
+// initializing editors
 var titleEditor = new MediumEditor('.title-editable', {
     buttonLabels: 'fontawesome'
 });
@@ -16,9 +17,11 @@ $(function () {
         titleEditor.deactivate();
     }
 });
+// hiding messages
 $('.error').hide().empty();
 $('.success').hide().empty();
 
+// create post
 $('body').on('click', '#form-submit', function(e){
     e.preventDefault();
     var postTitle = titleEditor.serialize();
@@ -49,6 +52,7 @@ $('body').on('click', '#form-submit', function(e){
     return false;
 });
 
+// update post
 $('body').on('click', '#form-update', function(e){
     e.preventDefault();
     var postTitle = titleEditor.serialize();

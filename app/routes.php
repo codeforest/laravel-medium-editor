@@ -15,5 +15,7 @@ Route::get('/', function()
     {
         return Redirect::to('posts');
     });
+// upload image route for MediumInsert plugin
 Route::any('upload', 'PostsController@upload');
+// resource routes for posts
 Route::resource('posts', 'PostsController');
