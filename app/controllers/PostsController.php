@@ -138,4 +138,16 @@ class PostsController extends BaseController {
 
         echo url('/uploads/'. $fileName);
     }
+    
+    public function email()
+    {
+        $user = $this->user;
+        $message = 'article has been created successfully';
+        
+        Mail::send('emails.template', $data, function ($message) use ($user){
+		    $message->subject('Notification - Medium Article created');
+		    $message->to($user->email);
+		});
+    }
+        
 }
